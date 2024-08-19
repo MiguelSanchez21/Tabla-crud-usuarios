@@ -1,0 +1,10 @@
+.boton
+{
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    background: #1A2849;
+    padding: 5px;
+    font-size: 20px;
+}

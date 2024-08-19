@@ -1,0 +1,28 @@
+<div id="modal_boton2" class="modal2"  [ngStyle]="{'visibility': abrir ? 'visible':'hidden'}" (click)="cerrar()">
+    <div class="contenedor2">
+        <header>LISTA SELECCIONADOS</header>
+        <label id="cerrar2" (click)="cerrar()">X</label>
+        <div class="contenido2">
+            <table class="table-primary" id="personas2" border="2">
+                <tr>
+                    <th class="container text-center">ID</th>
+                    <th class="container text-center">NOMBRE(S)</th>
+                    <th class="container text-center">APELLIDOS</th>
+                    <th class="container text-center">EDAD</th>
+                    <th class="container text-center">CORREO</th>
+                </tr>
+                <tr *ngFor="let persona of arreglo_lista">
+                    <th class="letra">{{persona.id}}</th>
+                    <th class="letra">{{persona.nombre}}</th>
+                    <th class="letra">{{persona.apellido}}</th>
+                    <th class="letra">{{persona.edad}}</th>
+                    <th class="letra">{{persona.correo}}</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="modal_boton3" class="modal3" [ngStyle]="{'visibility': abrir ? 'visible':'hidden'}" (click)="cerrar()">
+    <div class="contenedor3">
+    </div>
+</div>

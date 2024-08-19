@@ -1,0 +1,61 @@
+h1
+{
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+header
+{
+    display: block;
+}
+.cabecera
+{
+    background: linear-gradient(to right, #50D5B7, #067D68);
+    border: 1px solid #999999;
+    padding: 10px;
+}
+body
+{
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+.agrupar
+{   
+    width: 1400px;
+    border: 1px solid black;
+    margin: 15px auto;
+    background:lightblue;
+}
+.pie
+{
+   font-family: sans-serif;
+   clear: both;
+   padding: 20px;
+   background: #2d3436;
+   color: #ffffff;
+   font-size: 20px;
+}
+video
+{
+    width: 110%;
+    position: absolute;
+    right: 90%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seccion
+{ 
+    margin: 20px;
+    float: left;
+    width: 500px;
+}

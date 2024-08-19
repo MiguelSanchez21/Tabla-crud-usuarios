@@ -1,0 +1,48 @@
+<br><br>
+<aside class="columna">
+    <blockquote>
+        <table class="table-primary" border="2">
+            <tr>
+                <th class="container text-center"><input class="check-lista"
+                    type="checkbox" 
+                    [(ngModel)] = "parentSelector"
+                    [value]="-1"
+                    (change)="cambio_check($event)"></th>
+                <th class="container text-center">ID</th>
+                <th class="container text-center">NOMBRE(S)</th>
+                <th class="container text-center">APELLIDOS</th>
+                <th class="container text-center">EDAD</th>
+                <th class="container text-center">CORREO</th>
+                <th class="container text-center">BORRAR</th>
+            </tr>
+            <tr style = "border: 1px solid black;" *ngFor="let persona of arreglo_5_usuarios">
+                <th><input 
+                    class="check-lista"
+                    type="checkbox" 
+                    id="lista-check-box" 
+                    [value]="persona.id"
+                    [checked]="persona.permitir"
+                    (change)="cambio_check($event)">
+                </th>
+                <th>{{persona.id}}</th>
+                <th>{{persona.nombre}}</th>
+                <th>{{persona.apellido}}</th>
+                <th>{{persona.edad}}</th>
+                <th>{{persona.correo}}</th>
+                <th>
+                    <button
+                        class="delate"
+                        type="button"  
+                        (click)="borrar(persona)">
+                        X
+                    </button>
+                </th>
+            </tr>
+            <app-modal-eliminar (eliminacion)="confirmar_eliminacion($event)"></app-modal-eliminar>
+        </table>
+        <app-paginacion (arreglo_5_usuarios_)="usuarios($event)" (limpiar_checkbox)="limpiar($event)" (cerrar_boton)="cerrar($event)"></app-paginacion>
+    </blockquote>
+    <button id="imprimir_checkbox" class="boton_especial" [ngStyle]="{'visibility': lista ? 'visible':'hidden'}" (click)="modal_lista()">IMPRIMIR LISTA</button>
+    <app-modal-mostrar [abrir_modal] = "abrir_modal" [personas] = "personas"></app-modal-mostrar>
+</aside>
+<br>

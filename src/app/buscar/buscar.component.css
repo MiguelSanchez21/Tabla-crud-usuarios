@@ -1,0 +1,28 @@
+h1
+{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+aside, article
+{
+    display: block;
+}
+article
+{
+    background: linear-gradient(to right, #50D5B7, #067D68);
+    border: 2px solid #999999;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+aside i
+{
+    margin-top: -15px;
+    font-size: 100px;
+}
+input
+{
+    justify-content: center;
+    width: 70%;
+    margin-left: 15%;
+}

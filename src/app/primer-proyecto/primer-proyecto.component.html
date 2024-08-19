@@ -1,0 +1,25 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="assets/Imagenes/video.mp4" type="video/mp4">
+    </video>
+    <div class="agrupar">
+        <header class="cabecera">
+            <h1>BIENVENIDOS, INSCRIPCIONES ABIERTAS</h1>
+        </header>
+        <section class="seccion">
+          <app-altas (persona_)="padre($event)"></app-altas>
+          <app-buscar (nombre_)="padre2($event)"></app-buscar>
+        </section>
+        <app-tablas [personas] = "personas"></app-tablas>
+        <footer class="pie">
+            Candidatos Sanborns 2022 Sánchez Pérez Miguel Angel
+        </footer>
+    </div>
+</body>

@@ -1,0 +1,25 @@
+<ul>
+    <table class="table-info" id="personas2" border="2">
+        <tr style = "border: 1px solid black;">
+            <th class="container text-center">Nombre</th>
+            <th class="container text-center">Edad</th>
+            <th class="container text-center">secretIdentity</th>
+            <th class="container text-center">Poderes</th>
+        </tr>
+        <tr style = "border: 1px solid black;" *ngFor="let h of heroes.members; let x = index">
+            <th class="container text-center">{{h.name}}</th>
+            <th class="container text-center">{{h.age}}</th>
+            <th class="container text-center">{{h.secretIdentity}}</th>
+            <p *ngFor="let m of h.powers; let y = index">
+                <th class="container text-center">{{m}}</th>
+            </p>
+        </tr>
+    </table>
+    {{heroes.squadName}} --> {{heroes.homeTown}} --> {{heroes.formed}} --> {{heroes.secretBase}} --> {{heroes.active}}
+    <li class="letra" *ngFor="let h of heroes.members; let x = index">
+        {{h.name}} --> {{h.age}} --> {{h.secretIdentity}}
+        <td class="letra" *ngFor="let m of h.powers; let y = index">
+            {{m+ "-->"}}
+        </td>
+    </li>
+</ul>

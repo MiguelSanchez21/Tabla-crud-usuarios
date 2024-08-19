@@ -1,0 +1,14 @@
+<div id="modal_boton2" class="modal2"  [ngStyle]="{'visibility': eliminar ? 'visible':'hidden'}" (click)="cerrar()">
+    <div class="contenedor2">
+        <header>¿ESTAS SEGURO DE BORRARLO?</header>
+        <label id="cerrar2">X</label>
+        <div class="contenido2">
+            <input class="boton" type="button" name="Enviar" value="Si" [ngStyle]="{'visibility': eliminar ? 'visible':'hidden'}" (click)="si()">
+            <input class="boton" type="button" name="Enviar" value="No" [ngStyle]="{'visibility': eliminar ? 'visible':'hidden'}" (click)="cerrar()">
+        </div>
+    </div>
+</div>
+<div id="modal_boton3" class="modal3"  [ngStyle]="{'visibility': eliminar ? 'visible':'hidden'}" (click)="cerrar()">
+    <div class="contenedor3">
+    </div>
+</div>

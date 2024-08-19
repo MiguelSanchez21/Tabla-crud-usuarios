@@ -1,0 +1,43 @@
+h1
+{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.alerta
+{
+    width: 30%;
+    position: fixed;
+    left: 40%;
+    font-size: 20px;
+    margin-top: -15px;
+}
+aside, article
+{
+    display: block;
+}
+article
+{
+    background: linear-gradient(to right, #50D5B7, #067D68);
+    border: 2px solid #999999;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+input
+{
+    justify-content: center;
+    width: 70%;
+    margin-left: 15%;
+}
+button
+{
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 70%;
+    font-size: 20px;
+}
+aside i
+{
+    margin-top: -15px;
+    font-size: 100px;
+}
